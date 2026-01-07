@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Seven Sins Skill Tree</title>
+
+<style>
+body{
+    background:#0b0b0b;
+    color:white;
+    font-family:Arial;
+    padding:40px;
+}
+
+.tree{
+    display:flex;
+    justify-content:space-between;
+}
+
+.sin{
+    text-align:center;
+    width:140px;
+    position:relative;
+}
+
+.sin-title{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 30px;
+    font-weight:bold;
+    position:relative;
+    overflow:hidden;
+    border:2px solid currentColor;
+}
+
+.sin-title::after{
+    content:"";
+    position:absolute;
+    inset:-20px;
+    background:radial-gradient(circle, currentColor 10%, transparent 60%);
+    opacity:0.25;
+    animation:smoke 6s infinite alternate;
+}
+
+@keyframes smoke{
+    from{transform:translateX(-15px);}
+    to{transform:translateX(15px);}
+}
+
+/* ÇİZGİ */
+.line{
+    position:absolute;
+    left:50%;
+    width:3px;
+    background:linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.2)
+    );
+    box-shadow:0 0 10px rgba(255,255,255,0.6);
+    transform:translateX(-50%);
+    border-radius:3px;
+}
+
+/* SKILL */
+.skill{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    margin:35px auto;
+    cursor:pointer;
+    transition:0.3s;
+    position:relative;
+    z-index:2;
+}
+
+.skill:hover{
+    transform:scale(1.4);
+    box-shadow:0 0 15px currentColor;
+}
+
+/* ALT AÇIKLAMA */
+#desc{
+    margin-top:40px;
+    padding:20px;
+    min-height:80px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.05);
+    transition:0.5s;
+    position:relative;
+    overflow:hidden;
+}
+
+#desc::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 65%);
+    animation:smoke 8s infinite alternate;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Bir Yetenek Seç</h2>
+
+<div class="tree">
+
+<!-- PRIDE -->
+<div class="sin" style="color:#a855f7">
+<div class="sin-title">PRIDE</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#a855f7" onclick="showSkill('Pride I','Gurur aurası yayar','#a855f7')"></div>
+<div class="skill" style="background:#9333ea" onclick="showSkill('Pride II','Rakibi iradeyle bastırır','#9333ea')"></div>
+<div class="skill" style="background:#7e22ce" onclick="showSkill('Pride III','Mutlak üstünlük','#7e22ce')"></div>
+</div>
+
+<!-- GREED -->
+<div class="sin" style="color:#facc15">
+<div class="sin-title">GREED</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#facc15" onclick="showSkill('Greed I','Enerji emer','#facc15')"></div>
+<div class="skill" style="background:#eab308" onclick="showSkill('Greed II','Gücü çalar','#eab308')"></div>
+<div class="skill" style="background:#ca8a04" onclick="showSkill('Greed III','Her şeyi sahiplenir','#ca8a04')"></div>
+</div>
+
+<!-- LUST -->
+<div class="sin" style="color:#ec4899">
+<div class="sin-title">LUST</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#ec4899" onclick="showSkill('Lust I','Zihin etkisi','#ec4899')"></div>
+<div class="skill" style="background:#db2777" onclick="showSkill('Lust II','Algı bozar','#db2777')"></div>
+<div class="skill" style="background:#be185d" onclick="showSkill('Lust III','Mutlak cazibe','#be185d')"></div>
+</div>
+
+<!-- ENVY -->
+<div class="sin" style="color:#22c55e">
+<div class="sin-title">ENVY</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#22c55e" onclick="showSkill('Envy I','Yetenek kopyalar','#22c55e')"></div>
+<div class="skill" style="background:#16a34a" onclick="showSkill('Envy II','Zayıflatır','#16a34a')"></div>
+<div class="skill" style="background:#15803d" onclick="showSkill('Envy III','Gölgede kalır','#15803d')"></div>
+</div>
+
+<!-- GLUTTONY -->
+<div class="sin" style="color:#fb923c">
+<div class="sin-title">GLUTTONY</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#fb923c" onclick="showSkill('Gluttony I','Enerji tüketir','#fb923c')"></div>
+<div class="skill" style="background:#f97316" onclick="showSkill('Gluttony II','Sürekli beslenir','#f97316')"></div>
+<div class="skill" style="background:#ea580c" onclick="showSkill('Gluttony III','Doyumsuz form','#ea580c')"></div>
+</div>
+
+<!-- WRATH -->
+<div class="sin" style="color:#ef4444">
+<div class="sin-title">WRATH</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#ef4444" onclick="showSkill('Wrath I','Öfke patlaması','#ef4444')"></div>
+<div class="skill" style="background:#dc2626" onclick="showSkill('Wrath II','Yıkıcı darbe','#dc2626')"></div>
+<div class="skill" style="background:#b91c1c" onclick="showSkill('Wrath III','Katliam modu','#b91c1c')"></div>
+</div>
+
+<!-- SLOTH -->
+<div class="sin" style="color:#60a5fa">
+<div class="sin-title">SLOTH</div>
+<div class="line" style="top:120px;height:55px;"></div>
+<div class="line" style="top:120px;height:125px;"></div>
+<div class="line" style="top:120px;height:195px;"></div>
+<div class="skill" style="background:#60a5fa" onclick="showSkill('Sloth I','Zaman yavaşlar','#60a5fa')"></div>
+<div class="skill" style="background:#3b82f6" onclick="showSkill('Sloth II','Tepki düşer','#3b82f6')"></div>
+<div class="skill" style="background:#2563eb" onclick="showSkill('Sloth III','Mutlak durağanlık','#2563eb')"></div>
+</div>
+
+</div>
+
+<div id="desc">Bir yetenek seç</div>
+
+<script>
+function showSkill(title,text,color){
+    const d=document.getElementById("desc");
+    d.innerHTML="<b>"+title+"</b><br>"+text;
+    d.style.boxShadow="0 0 25px "+color;
+    d.style.border="1px solid "+color;
+}
+</script>
+
+</body>
+</html>
