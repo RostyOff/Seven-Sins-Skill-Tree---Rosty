@@ -102,6 +102,35 @@ body{
     background:radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 65%);
     animation:smoke 8s infinite alternate;
 }
+
+/* KURAL YAZISI */
+.rule-warning{
+    margin-top:30px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:1px;
+    animation:neonPulse 4s infinite alternate, smoke 6s infinite alternate;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 15px #ffffff,
+        0 0 30px #ffffff;
+}
+
+@keyframes neonPulse{
+    0%{
+        color:#ffffff;
+        text-shadow:0 0 5px #ffffff, 0 0 15px #ffffff;
+    }
+    50%{
+        color:#bbbbbb;
+        text-shadow:0 0 10px #cccccc, 0 0 25px #cccccc;
+    }
+    100%{
+        color:#ffffff;
+        text-shadow:0 0 5px #ffffff, 0 0 15px #ffffff;
+    }
+}
 </style>
 </head>
 
@@ -117,9 +146,9 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#a855f7" onclick="showSkill('Pride I','Gurur aurası yayar','#a855f7')"></div>
-<div class="skill" style="background:#9333ea" onclick="showSkill('Pride II','Rakibi iradeyle bastırır','#9333ea')"></div>
-<div class="skill" style="background:#7e22ce" onclick="showSkill('Pride III','Mutlak üstünlük','#7e22ce')"></div>
+<div class="skill" style="background:#a855f7" onclick="showSkill('Dokunulamaz','Yüce varlığa gelen kol ve bacak saldırılarını zorla durdurup kişiye cok yüksek hasar verir - her dövüşte 1 kere','#a855f7')"></div>
+<div class="skill" style="background:#9333ea" onclick="showSkill('Mutlak Söz','Karşısındaki zavallıya bir emir verir, emirler karşıdakinin iradesine ve iq seviyesine bağlı olarak sınırlandırılır.','#9333ea')"></div>
+<div class="skill" style="background:#7e22ce" onclick="showSkill('Kibirli Kral','Mutlak üstünlük moduna geçen Yüce varlık etrafındaki kişiler tarafından o izin verilmedikce dokunulamaz bu etrafta iradesi ondan az olan herkese uygulanır, Mutlak üstünlük etkisine sahip birimler saldırı alırsa etki kalkar.','#7e22ce')"></div>
 </div>
 
 <!-- GREED -->
@@ -128,9 +157,9 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#facc15" onclick="showSkill('Greed I','Enerji emer','#facc15')"></div>
-<div class="skill" style="background:#eab308" onclick="showSkill('Greed II','Gücü çalar','#eab308')"></div>
-<div class="skill" style="background:#ca8a04" onclick="showSkill('Greed III','Her şeyi sahiplenir','#ca8a04')"></div>
+<div class="skill" style="background:#facc15" onclick="showSkill('Benim Yeteneğim','Kullanıcı karşıdakinin yeteneği beğenir ve o yeteneği kendisi için kopyalar yeteneğin gücü fiziksel yeteneğe göre güçlenir','#facc15')"></div>
+<div class="skill" style="background:#eab308" onclick="showSkill('Sadece Bana Özel','Karşıdaki kişi saldırı yaparken kullanıcı saldırı başarılı bir şekilde durursa karşıdaki rakip o yeteneği dövüş boyunca bidaha kullanamaz','#eab308')"></div>
+<div class="skill" style="background:#ca8a04" onclick="showSkill('Herşey Benim','Kullanıcı karşıdaki ve etrafındaki herkesin gücünü ister, ve kullanıcı gelen her durdurulan saldırı için saldırı yapan kişinin fiziksel gücünün bir kısmını çalar bu saldırdığı kişiler içinde geçerli','#ca8a04')"></div>
 </div>
 
 <!-- LUST -->
@@ -139,9 +168,9 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#ec4899" onclick="showSkill('Lust I','Zihin etkisi','#ec4899')"></div>
-<div class="skill" style="background:#db2777" onclick="showSkill('Lust II','Algı bozar','#db2777')"></div>
-<div class="skill" style="background:#be185d" onclick="showSkill('Lust III','Mutlak cazibe','#be185d')"></div>
+<div class="skill" style="background:#ec4899" onclick="showSkill('Seçimsiz','Ken, karşı cins olan herkese karşı etkileyicilik pasifi kazanır bu pasifin baskısı karşıdakinin iradesine göre gücü belirlenir','#ec4899')"></div>
+<div class="skill" style="background:#db2777" onclick="showSkill('Vazgeçilemez','Karşı cins olan kişinin zihnine girme becerisi kazandırılır bu sayede karşıdakinin değerlerine güvendikleri kişileri normalde seçimi söz konusu olamıcak şeyleri yaptırabilir yine aynı şekilde karşıdakinin iradesine bağlıdır','#db2777')"></div>
+<div class="skill" style="background:#be185d" onclick="showSkill('Hayallerin Adamı','Mutlak Cazibe etkisine giren Ken hiçbir karşı cins tarafından saldırıya uğrayamaz aynı şekilde bütün karşı cinsler Ken için savaşmaya başlar istemsiz bir şekilde ve bu etki Ken isterse sonsuza kadar bi kişiye uygulanabilir','#be185d')"></div>
 </div>
 
 <!-- ENVY -->
@@ -150,9 +179,9 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#22c55e" onclick="showSkill('Envy I','Yetenek kopyalar','#22c55e')"></div>
-<div class="skill" style="background:#16a34a" onclick="showSkill('Envy II','Zayıflatır','#16a34a')"></div>
-<div class="skill" style="background:#15803d" onclick="showSkill('Envy III','Gölgede kalır','#15803d')"></div>
+<div class="skill" style="background:#22c55e" onclick="showSkill('Benimki Daha İyi','Karşıdakinin yeteneğini kıskanan Ken onun yeteneğinin gücünü azaltır eğer yetenek sırasında kişinin yeteneğini yaptığı uzuvluna saldırıp durdurabilirse','#22c55e')"></div>
+<div class="skill" style="background:#16a34a" onclick="showSkill('Zayıftı','Ken kişinin yeteneğini nefretle kıskanır ve gelen aynı saldırıyı 3 kere durdurursa kişinin bütün özgüveni yerlebir olur ve birdaha o yeteneği hayatı boyunca kullanamaz','#16a34a')"></div>
+<div class="skill" style="background:#15803d" onclick="showSkill('O Benim','Ken karşıdaki kişiye hayran kalır ve onun bütün yetenekleri kopyalar ve eğer ondan daha iyi kullanırsa karşıdakinin iradesi kalıcı olarak azalır','#15803d')"></div>
 </div>
 
 <!-- GLUTTONY -->
@@ -161,9 +190,9 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#fb923c" onclick="showSkill('Gluttony I','Enerji tüketir','#fb923c')"></div>
-<div class="skill" style="background:#f97316" onclick="showSkill('Gluttony II','Sürekli beslenir','#f97316')"></div>
-<div class="skill" style="background:#ea580c" onclick="showSkill('Gluttony III','Doyumsuz form','#ea580c')"></div>
+<div class="skill" style="background:#fb923c" onclick="showSkill('Ego Ziyafeti','Ken etrafında ona saygı duyan ve ittat eden herkes için kendi iradesi katlar ve güçlenir','#fb923c')"></div>
+<div class="skill" style="background:#f97316" onclick="showSkill('Zevk Şelalesi','Ken ondan nefret eden birinin acı cektiğini ve caresiz halde kaldığını görünce durdulamaz hale gelerek bir sonraki saldırısını katlar ve saldırılardan etkilenmez olur sadece bi kerelik','#f97316')"></div>
+<div class="skill" style="background:#ea580c" onclick="showSkill('Kraliyet Masası','Doyumsuz forma geçen Ken karşısındakinin duygularını istemeye başlar ve karşıdakinin bütün olumsuz duyguları için katlanarak güçlenmeye başlar ve belli bir seviyeye gelince Zevk Şelalesi etkisine girer bu sefer tek seferlik değil...','#ea580c')"></div>
 </div>
 
 <!-- WRATH -->
@@ -172,9 +201,9 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#ef4444" onclick="showSkill('Wrath I','Öfke patlaması','#ef4444')"></div>
-<div class="skill" style="background:#dc2626" onclick="showSkill('Wrath II','Yıkıcı darbe','#dc2626')"></div>
-<div class="skill" style="background:#b91c1c" onclick="showSkill('Wrath III','Katliam modu','#b91c1c')"></div>
+<div class="skill" style="background:#ef4444" onclick="showSkill('Zavallıya Sinir','Ken ona saldıran kişiye sinirlenir onun yaptığı aynı  saldırının hasarını büyük ölçüde azaltır bir sonrakinde','#ef4444')"></div>
+<div class="skill" style="background:#dc2626" onclick="showSkill('İntikam','Ken dövüş boyunca yediği her saldırıyı biriktirir ve bir sonraki saldırısına veya yeteneğine İntikam pasifini ekleyerek biriktirdiği bütün gücü geri boşaltır','#dc2626')"></div>
+<div class="skill" style="background:#b91c1c" onclick="showSkill('Öfke Patlaması','Ken in saldırıları cok güçlenir saldırılara karşı cok daha dayanıklı olur görüş hızı ve mesafesi artar bütün fiziksel özellikleri artar fakat kendi üstündeki etkisini kaybeder','#b91c1c')"></div>
 </div>
 
 <!-- SLOTH -->
@@ -183,14 +212,19 @@ body{
 <div class="line" style="top:120px;height:55px;"></div>
 <div class="line" style="top:120px;height:125px;"></div>
 <div class="line" style="top:120px;height:195px;"></div>
-<div class="skill" style="background:#60a5fa" onclick="showSkill('Sloth I','Zaman yavaşlar','#60a5fa')"></div>
-<div class="skill" style="background:#3b82f6" onclick="showSkill('Sloth II','Tepki düşer','#3b82f6')"></div>
-<div class="skill" style="background:#2563eb" onclick="showSkill('Sloth III','Mutlak durağanlık','#2563eb')"></div>
+<div class="skill" style="background:#60a5fa" onclick="showSkill('Üşengeç','Ken hareket etmeye üşenir ve gelen saldırıyı yerinde durarak durdurabileceği Zahmetsiz Duvar yeteneğini kullanır bu yetenek fiziksel yeteneğe göre güçlenir fakat bu hareket gelen saldırıyı durdurursa karşıdakinin iradesi kalıcı olarak azalır','#60a5fa')"></div>
+<div class="skill" style="background:#3b82f6" onclick="showSkill('Biraz Dinlenelim','Ken yorulur ve karşıdakini yakalıp 3 kere başarılı Dinlendirici Combo yaparsa karşıdakiyle beraber yere oturur ve dinlenirler','#3b82f6')"></div>
+<div class="skill" style="background:#2563eb" onclick="showSkill('Tembelliğin Zirvesi - Tembelliğin İntikamı','Ken Tembelliğin Zirvesi moduna girerek hareketlerini ve saldırılarını yavaşlatır fakat bu etkide Zahmetsiz Duvar yeteneği güçlenir Ken bu etkideyken 10 dakika boyunca kalabilirse bu etki sırasında dövüşteyse diğer etkiye geçiş hakkı kazanır Tembelliğin İntikamına geçerek bütün etkileri kaldırır ve hareket hızı normale göre cok fazla artar vücudundaki her hız atomu katlanarak bölünür ve artar o kadar hızlanır karşıdaki kendini yavaşlamış ve tembelleşmiş hisseder kalıcı olarak irade kırar','#2563eb')"></div>
 </div>
 
 </div>
 
 <div id="desc">Bir yetenek seç</div>
+
+<div class="rule-warning">
+⚠ KURAL ⚠<br>
+Sadece bir Günahın 3. Yeteneği Elde Edilebilir
+</div>
 
 <script>
 function showSkill(title,text,color){
